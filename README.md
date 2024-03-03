@@ -1,6 +1,14 @@
-# Differential Gaussian Rasterization
+# Differential Gaussian Rasterization with Camera Pose Jacobians
 
-Used as the rasterization engine for the paper "3D Gaussian Splatting for Real-Time Rendering of Radiance Fields". If you can make use of it in your own research, please be so kind to cite us.
+This software is used as the rasterization engine in the paper ["Gaussian Splatting SLAM"](https://arxiv.org/abs/2312.06741), and supports:
+
+* Analytical gradient for SE(3) camera poses.
+* Analytical gradient for rendered depth.
+
+The code is built on top of the original [Differential Gaussian Rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization) used in "3D Gaussian Splatting for Real-Time Rendering of Radiance Fields".
+
+If you can make use of it in your own research, please be so kind to cite both papers.
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -15,5 +23,14 @@ Used as the rasterization engine for the paper "3D Gaussian Splatting for Real-T
       year         = {2023},
       url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
 }</code></pre>
-  </div>
+</code></pre>
+    <pre><code>@inproceedings{Matsuki:Murai:etal:CVPR2024,
+  title={{G}aussian {S}platting {SLAM}},
+  author={Hidenobu Matsuki and Riku Murai and Paul H. J. Kelly and Andrew J. Davison},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}</code></pre>
+
+</div>
 </section>
+
